@@ -1,0 +1,35 @@
+/****************************************
+variables
+*****************************************/
+// $font: 
+
+$highlight: #EF4135;
+$darkBackground: #272f38;
+$lightBackground: #F4F4F5;
+$navyBlue: #384452;
+$accentColor: #fff;
+$black: #000;
+$pink: #FF7A8F;
+
+
+.transition {
+	transition: all .25s 0s ease;
+	transition-property: all;
+	transition-duration: .25s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+// @import "syntax";
+// @import "lanyon";
+@import 'default';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'about';
+@import 'work';
+@import 'blogs';
+@import 'blog';
+@import 'workExample';
+
+

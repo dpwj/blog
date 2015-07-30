@@ -1,0 +1,17 @@
+.hero {
+	background: radial-gradient(rgba(44, 81, 102, 0.8), rgba(44, 81, 102, 0.4)), url("../images/background.jpg");
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	padding: 1px;
+	text-align: center;
+			text-shadow: 1px 1px 4px #000000;
+  // padding: 100vh 0 0 0;
+		h1 {
+			padding: 100px 50px 50px ;
+			font-size: 60pt;
+		}
+		p {
+			font-size: 26pt;
+		}
+}

@@ -1,0 +1,148 @@
+.about {
+	background-color: #3692D4;
+	color: #fff;
+	line-height: 40px;
+	p {
+		padding: 80px;
+		font-weight: light;
+		text-align: justify;
+	}
+}
+
+.headline{
+	text-align: center;
+	color: #000;
+	font-size: 24pt;
+	padding-top: 40px;
+}
+
+// Experiance section
+.experience {
+	color: #aaa;
+	background-color: $darkBackground;
+	p {
+		font-size: 0.8em;
+	}
+	h1 {
+		color: #fff;
+	}
+}
+
+
+
+.career {
+	 > h2 {
+	 	color: #fff;
+	 	margin-top: 20px;
+	 }
+}
+
+.job {
+	overflow:hidden;
+	padding: 40px 0;
+	border-bottom: 1px solid #515151;
+}
+
+.position {
+	float: left;
+	width: 30%;
+	padding-right: 40px;
+	line-height: 36px;
+	text-align: right;
+
+	h3 {
+	// text-align: right;
+		color: #3692D4;
+	}
+
+	h4 {
+	// text-align: right;
+		color: $highlight;
+		font-size: 0.8em;
+	}
+}
+
+.description {
+	line-height: 32px;
+	width: 70%;
+	margin-left: 30%;
+	padding-left: 80px;
+	border-left: 1px solid #515151;
+
+
+	h3 {
+		color: #3692D4;
+
+	}
+
+	p {
+		color: #aaa;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+}
+
+ul {
+	margin: 50px 50px 0 50px;
+}
+
+
+
+//EDUCATION
+.education {
+	background-color: #fff;
+
+	.description, h3, .headline{
+		color: $navyBlue;
+	}
+}
+
+
+//SKILLS SECTION
+.abilities, .container{
+	background-color: #3692D4;
+	overflow: hidden;
+	padding-bottom: 50px;
+
+	li i {
+		font-size: 12pt;
+	}
+}
+	h2.headline {
+		color: #fff;
+	}
+
+.leftColumn, .rightColumn {
+	float: left;
+	line-height: 40px;
+}
+
+.leftColumn {
+	padding-left: 125px;
+}
+
+.skill {
+	display: block;
+	width: 180px;
+	display: block;
+	float: left;
+
+	text-align: left;
+}
+
+.score {
+	display: block;
+	width: 190px;
+	float: left;
+	text-align: right;
+
+}
+
+.row:hover {
+	@extend .transition;
+	background-color: grey;
+	.score i {
+		margin-right: 10px;
+		font-size: 18pt;
+	}
+}

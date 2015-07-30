@@ -1,0 +1,53 @@
+.work {
+	text-align: center;
+
+	.example {
+		display: block;
+		float: left;
+		width: 25%;
+		height: 600px;
+		overflow: hidden;
+		padding: 60px 0;
+		position: relative;
+		background-image: -webkit-radial-gradient(50% 100%, #66707A 0%, #384452 100%);
+		border-bottom: 1px solid #384452;
+		
+		img {
+			@extend .transition;
+			transform: translateY(100px);
+		}
+		a:hover {
+			h3 {
+				@extend .transition;
+				transform: translateY(100px);
+			}
+			img{
+				@extend .transition;
+				transform: translateY(-75px);
+			}
+		}
+
+	}
+
+	.btn {
+		margin: 30px;
+	}
+
+	.readMore {
+		background-color: $darkBackground;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: left;
+		padding: 0 50px; 
+
+		.fa {
+			right: 50px;
+		}
+
+	}
+	figure {
+		margin: 10px;
+	}
+}

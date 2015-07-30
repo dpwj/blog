@@ -1,0 +1,887 @@
+/****************************************
+variables
+*****************************************/
+.transition, a:active, a:hover, .next a:active, .next a:hover, .work .example img, .work .example a:hover h3, .work .example a:hover img, a.blogLink, .row:hover {
+  transition: all .25s 0s ease;
+  transition-property: all;
+  transition-duration: .25s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+
+.hll {
+  background-color: #ffffcc; }
+
+.c {
+  color: #999; }
+
+.err {
+  color: #AA0000;
+  background-color: #FFAAAA; }
+
+.k {
+  color: #006699; }
+
+.o {
+  color: #555555; }
+
+.cm {
+  color: #0099FF;
+  font-style: italic; }
+
+.cp {
+  color: #009999; }
+
+.c1 {
+  color: #999; }
+
+.cs {
+  color: #999; }
+
+.gd {
+  background-color: #FFCCCC;
+  border: 1px solid #CC0000; }
+
+.ge {
+  font-style: italic; }
+
+.gr {
+  color: #FF0000; }
+
+.gh {
+  color: #003300; }
+
+.gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00CC00; }
+
+.go {
+  color: #AAAAAA; }
+
+.gp {
+  color: #000099; }
+
+.gu {
+  color: #003300; }
+
+.gt {
+  color: #99CC66; }
+
+.kc {
+  color: #006699; }
+
+.kd {
+  color: #006699; }
+
+.kn {
+  color: #006699; }
+
+.kp {
+  color: #006699; }
+
+.kr {
+  color: #006699; }
+
+.kt {
+  color: #007788; }
+
+.m {
+  color: #FF6600; }
+
+.s {
+  color: #d44950; }
+
+.na {
+  color: #4f9fcf; }
+
+.nb {
+  color: #336666; }
+
+.nc {
+  color: #00AA88; }
+
+.no {
+  color: #336600; }
+
+.nd {
+  color: #9999FF; }
+
+.ni {
+  color: #999999; }
+
+.ne {
+  color: #CC0000; }
+
+.nf {
+  color: #CC00FF; }
+
+.nl {
+  color: #9999FF; }
+
+.nn {
+  color: #00CCFF; }
+
+.nt {
+  color: #2f6f9f; }
+
+.nv {
+  color: #003333; }
+
+.ow {
+  color: #000000; }
+
+.w {
+  color: #bbbbbb; }
+
+.mf {
+  color: #FF6600; }
+
+.mh {
+  color: #FF6600; }
+
+.mi {
+  color: #FF6600; }
+
+.mo {
+  color: #FF6600; }
+
+.sb {
+  color: #CC3300; }
+
+.sc {
+  color: #CC3300; }
+
+.sd {
+  color: #CC3300;
+  font-style: italic; }
+
+.s2 {
+  color: #CC3300; }
+
+.se {
+  color: #CC3300; }
+
+.sh {
+  color: #CC3300; }
+
+.si {
+  color: #AA0000; }
+
+.sx {
+  color: #CC3300; }
+
+.sr {
+  color: #33AAAA; }
+
+.s1 {
+  color: #CC3300; }
+
+.ss {
+  color: #FFCC33; }
+
+.bp {
+  color: #336666; }
+
+.vc {
+  color: #003333; }
+
+.vg {
+  color: #003333; }
+
+.vi {
+  color: #003333; }
+
+.il {
+  color: #FF6600; }
+
+.css .o, .css .o + .nt, .css .nt + .nt {
+  color: #999; }
+
+/*
+ *  ___
+ * /\_ \
+ * \//\ \      __      ___   __  __    ___     ___
+ *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
+ *    \_\ \_/\ \_\.\_/\ \/\ \ \ \_\ \/\ \_\ \/\ \/\ \
+ *    /\____\ \__/.\_\ \_\ \_\/`____ \ \____/\ \_\ \_\
+ *    \/____/\/__/\/_/\/_/\/_/`/___/> \/___/  \/_/\/_/
+ *                               /\___/
+ *                               \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/lanyon.
+ */
+/*
+ * Contents
+ *
+ * Global resets
+ * Masthead
+ * Sidebar
+ * Slide effect
+ * Posts and pages
+ * Pagination
+ * Reverse layout
+ * Themes
+ */
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+/* Prevent scroll on narrow devices */
+html, body {
+  overflow-x: hidden; }
+
+html {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif; }
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+.wrap {
+  position: relative;
+  width: 100%; }
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+.container {
+  max-width: 28rem; }
+
+@media (min-width: 38rem) {
+  .container {
+    max-width: 32rem; } }
+
+@media (min-width: 56rem) {
+  .container {
+    max-width: 38rem; } }
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+.masthead {
+  padding-top: 1rem;
+  border-bottom: 1px solid #eee; }
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050; }
+  .masthead-title a {
+    color: #505050; }
+  .masthead-title small {
+    font-size: 75%;
+    font-weight: 400;
+    color: #c0c0c0;
+    letter-spacing: 0; }
+
+@media (max-width: 48rem) {
+  .masthead-title {
+    text-align: center; }
+    .masthead-title small {
+      display: none; } }
+
+/*
+ * Sidebar
+ *
+ * The sidebar is the drawer, the item we are toggling with our handy hamburger
+ * button in the corner of the page.
+ *
+ * This particular sidebar implementation was inspired by Chris Coyier's
+ * "Offcanvas Menu with CSS Target" article, and the checkbox variation from the
+ * comments by a reader. It modifies both implementations to continue using the
+ * checkbox (no change in URL means no polluted browser history), but this uses
+ * `position` for the menu to avoid some potential content reflow issues.
+ *
+ * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+ */
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: .875rem;
+  /* 15px */
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #202020;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .sidebar a {
+    font-weight: normal;
+    color: #fff; }
+
+@media (min-width: 30rem) {
+  .sidebar {
+    font-size: .75rem;
+    /* 14px */ } }
+
+/* Sidebar content */
+.sidebar-item {
+  padding: 1rem; }
+  .sidebar-item p:last-child {
+    margin-bottom: 0; }
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .sidebar-nav-item.active {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent; }
+
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent; }
+
+@media (min-width: 48rem) {
+  .sidebar-item {
+    padding: 1.5rem; }
+  .sidebar-nav-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none; }
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  width: 2.2rem;
+  padding: .5rem .65rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer; }
+  .sidebar-toggle:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-bottom: .125rem;
+    border-top: .375rem double;
+    border-bottom: .125rem solid;
+    /* Make the border inside the box */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .sidebar-toggle:active {
+    color: #fff;
+    background-color: #505050; }
+
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #505050; }
+
+@media (min-width: 30.1rem) {
+  .sidebar-toggle {
+    position: fixed;
+    width: 2.25rem; }
+    .sidebar-toggle:before {
+      padding-bottom: .15rem;
+      border-top-width: .45rem;
+      border-bottom-width: .15rem; } }
+
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+.wrap, .sidebar, .sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.wrap, .sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out; }
+
+#sidebar-checkbox:checked + .sidebar {
+  visibility: visible; }
+#sidebar-checkbox:checked ~ .sidebar, #sidebar-checkbox:checked ~ .wrap, #sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+  -ms-transform: translateX(14rem);
+  transform: translateX(14rem); }
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+.page, .post {
+  margin-bottom: 4em; }
+
+/* Blog post or page title */
+.page-title {
+  color: #303030; }
+
+.post-title {
+  color: #303030; }
+  .post-title a {
+    color: #303030; }
+
+.page-title, .post-title {
+  margin-top: 0; }
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a; }
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee; }
+
+.related-posts {
+  padding-left: 0;
+  list-style: none; }
+  .related-posts h3 {
+    margin-top: 0; }
+  .related-posts li small {
+    font-size: 75%;
+    color: #999; }
+  .related-posts li a:hover {
+    color: #268bd2;
+    text-decoration: none; }
+    .related-posts li a:hover small {
+      color: inherit; }
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center; }
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee; }
+  .pagination-item:first-child {
+    margin-bottom: -1px; }
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5; }
+
+@media (min-width: 30rem) {
+  .pagination {
+    margin: 3rem 0; }
+  .pagination-item {
+    float: left;
+    width: 50%; }
+    .pagination-item:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .pagination-item:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; } }
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
+ * on the right side.
+ */
+.layout-reverse .sidebar {
+  left: auto;
+  right: -14rem; }
+.layout-reverse .sidebar-toggle {
+  left: auto;
+  right: 1rem; }
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar, .layout-reverse #sidebar-checkbox:checked ~ .wrap, .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+  -ms-transform: translateX(-14rem);
+  transform: translateX(-14rem); }
+
+/****************************************
+RESET
+*****************************************/
+html {
+  box-sizing: border-box;
+  color: #444;
+  font: 16pt 'Open Sans', Arial;
+  font-weight: 500; }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit;
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+/****************************************
+Defaults
+*****************************************/
+body {
+  background-color: #272f38;
+  color: #fff; }
+
+.panel > div {
+  margin: auto;
+  width: 1200px; }
+
+.btn {
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 13pt;
+  padding: 0 20px;
+  background-color: #384452; }
+
+a {
+  text-decoration: none; }
+
+a:active, a:hover {
+  color: #EF4135;
+  background-color: #384452; }
+
+.next {
+  height: 100px;
+  line-height: 110px; }
+  .next a {
+    display: block;
+    background-color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    height: 100px;
+    color: #000; }
+  .next a:active, .next a:hover {
+    color: #EF4135;
+    background-color: #384452; }
+
+.readMore {
+  display: inline;
+  border-top: 2px solid #ddd;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  font-size: 12pt; }
+  .readMore .fa {
+    position: absolute;
+    right: 40px;
+    font-size: 24pt;
+    line-height: 78px; }
+
+.pageTitle {
+  background-color: #fff;
+  text-align: center; }
+  .pageTitle h1 {
+    font-size: 56pt;
+    font-weight: 900;
+    color: #384452;
+    padding: 80px 0;
+    margin: 0; }
+    .pageTitle h1 small {
+      font-size: 14pt; }
+
+/****************************************
+HEADER
+*****************************************/
+header {
+  padding-top: 1rem;
+  border-bottom: 2px solid #000;
+  background-color: #384452;
+  height: 75px; }
+  header a {
+    color: #fff;
+    padding: 15px;
+    font-weight: 900; }
+  header a:nth-child(1) {
+    margin-right: 65px; }
+  header .fa {
+    float: right;
+    padding: 15; }
+
+footer {
+  background-color: #384452;
+  padding: 40px 0 80px 0;
+  text-align: center;
+  clear: both;
+  position: relative; }
+
+.socialMedia {
+  display: inline;
+  float: right;
+  padding-right: 40px; }
+  .socialMedia .fa {
+    font-size: 38pt;
+    padding-right: 20px; }
+  .socialMedia a:hover {
+    text-decoration: none; }
+
+.info {
+  display: inline;
+  font-size: 12pt; }
+
+.info p {
+  display: inline;
+  line-height: 50px;
+  margin: 5px 0 0 80px; }
+
+.quote {
+  font-size: 12pt;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0; }
+
+.hero {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  padding: 1px;
+  text-align: center; }
+  .hero h1 {
+    font-size: 48pt; }
+
+.work {
+  text-align: center; }
+  .work .example {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 600px;
+    overflow: hidden;
+    padding: 60px 0;
+    position: relative;
+    background-image: -webkit-radial-gradient(50% 100%, #66707A 0%, #384452 100%);
+    border-bottom: 1px solid #384452; }
+    .work .example img {
+      transform: translateY(100px); }
+    .work .example a:hover h3 {
+      transform: translateY(100px); }
+    .work .example a:hover img {
+      transform: translateY(-75px); }
+  .work .btn {
+    margin: 30px; }
+  .work .readMore {
+    background-color: #272f38;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 0 50px; }
+  .work figure {
+    margin: 10px; }
+
+.blog {
+  background-color: #EF4135;
+  font-family: "museo-sans",sans-serif;
+  overflow: hidden;
+  text-align: center; }
+  .blog .btn {
+    margin: 40px; }
+  .blog a:hover {
+    background-color: #272f38;
+    color: #EF4135; }
+    .blog a:hover h2 {
+      color: #fff; }
+    .blog a:hover .readMore {
+      transform: translateY(-50px);
+      border-top: 1px solid #EF4135; }
+
+a.blogLink {
+  height: 450px;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  float: left;
+  padding: 30px;
+  margin: 20px 15px;
+  width: 30%;
+  text-align: left;
+  position: relative; }
+  a.blogLink span.date {
+    color: #687788;
+    font-family: "museo-sans",sans-serif;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-size: 14pt;
+    border-bottom: 2px solid #ddd;
+    padding: 0 0 10px 0; }
+  a.blogLink h2 {
+    float: left;
+    clear: both;
+    width: 90%;
+    color: #384452;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    position: absolute;
+    padding: 60px 0; }
+
+/****************************************
+old Articles
+*****************************************/
+.extraArticles {
+  background-color: #F4F4F5;
+  overflow: hidden; }
+
+.extra.blogLink {
+  background-color: #F4F4F5;
+  width: 100%;
+  height: 175px;
+  margin: 0;
+  border-bottom: 2px solid #E7E7E9; }
+  .extra.blogLink h2 {
+    padding: 35px 0; }
+  .extra.blogLink .readMore {
+    border-top: none;
+    bottom: 0;
+    position: static; }
+
+.about {
+  background-color: #3692D4;
+  color: #fff;
+  line-height: 40px; }
+  .about p {
+    padding: 80px;
+    font-weight: light;
+    text-align: justify; }
+
+.headline {
+  text-align: center;
+  color: #000;
+  font-size: 24pt;
+  padding-top: 40px; }
+
+.experience {
+  color: #aaa;
+  background-color: #272f38; }
+  .experience p {
+    font-size: 0.8em; }
+  .experience h1 {
+    color: #fff; }
+
+.career > h2 {
+  color: #fff;
+  margin-top: 20px; }
+
+.job {
+  overflow: hidden;
+  padding: 40px 0;
+  border-bottom: 1px solid #515151; }
+
+.position {
+  float: left;
+  width: 30%;
+  padding-right: 40px;
+  line-height: 36px;
+  text-align: right; }
+  .position h3 {
+    color: #3692D4; }
+  .position h4 {
+    color: #EF4135;
+    font-size: 0.8em; }
+
+.description {
+  line-height: 32px;
+  width: 70%;
+  margin-left: 30%;
+  padding-left: 80px;
+  border-left: 1px solid #515151; }
+  .description h3 {
+    color: #3692D4; }
+  .description p {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 0.8em; }
+
+ul {
+  margin: 50px 50px 0 50px; }
+
+.education {
+  background-color: #fff; }
+  .education .description, .education h3, .education .headline {
+    color: #384452; }
+
+.abilities, .container {
+  background-color: #3692D4;
+  overflow: hidden;
+  padding-bottom: 50px; }
+  .abilities li i, .container li i {
+    font-size: 12pt; }
+
+h2.headline {
+  color: #fff; }
+
+.leftColumn, .rightColumn {
+  float: left;
+  line-height: 40px; }
+
+.leftColumn {
+  padding-left: 125px; }
+
+.skill {
+  display: block;
+  width: 180px;
+  display: block;
+  float: left;
+  text-align: left; }
+
+.score {
+  display: block;
+  width: 190px;
+  float: left;
+  text-align: right; }
+
+.row:hover {
+  background-color: grey; }
+  .row:hover .score i {
+    margin-right: 10px;
+    font-size: 18pt; }

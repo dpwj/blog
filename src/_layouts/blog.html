@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section>
+    <div class="pageTitle panel">
+      <div>
+        <h1>{{ page.title }}</h1>
+      </div>
+      <div class="postDate">{{ page.date | date_to_string }}</div>
+    </div>
+  </section>
+
+<main class="panel contentSection">
+  <div class="blogContent">
+    {{ content }}
+  </div>
+  {% include relatedPosts.html %}
+</main>    
+  

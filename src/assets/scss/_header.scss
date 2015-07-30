@@ -1,0 +1,21 @@
+/****************************************
+HEADER
+*****************************************/
+
+header {
+  padding-top: 1rem;
+  border-bottom: 2px solid #000;
+  background-color: $navyBlue;
+  height: 75px;
+
+	a {
+		color: #fff;
+		padding: 15px;
+		font-weight:900;
+	}
+
+	a:nth-child(1) {
+		margin-right: 65px;
+	}
+
+}
