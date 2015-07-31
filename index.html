@@ -87,7 +87,7 @@ title: Home
       <div class="panel">
         <div>
           {% for post in site.posts limit:6 %}
-            <a href="/blog/{{ post.url }}" class='blogLink'>
+            <a href="{{ post.url }}" class='blogLink'>
               <span class="date">{{ post.date | date_to_string }}</span>
               <div>
                 <h2>{{ post.title }}</h2>
@@ -99,7 +99,7 @@ title: Home
               </div>
             </a>
           {% endfor %}
-          <a href="/blog/" class='btn'>Read More</a>
+          <a href="/blog/blog" class='btn'>Read More</a>
         </div>
       </div>
     </div>
