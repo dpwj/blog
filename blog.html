@@ -20,7 +20,7 @@ layout: default
       <div>
       {% for post in site.posts limit:6 %}
  
-        <a href="/food{{ post.url }}" class='blogLink'>
+        <a href="{{ post.url | prepend: site.baseurl }}" class='blogLink'>
           <span class="date">{{ post.date | date_to_string }}</span>
           <div>
             <h2>{{ post.title }}</h2>
@@ -44,7 +44,7 @@ layout: default
     <div class='panel' >
       <div>
       {% for post in site.posts offset:6 %}
-        <a href="/food{{ post.url }}" class='extra blogLink'>
+        <a href="{{ post.url | prepend: site.baseurl }}" class='extra blogLink'>
             <span class="date">{{ post.date | date_to_string }}</span>
             <div>
               <h2>{{ post.title }}</h2>
