@@ -6,7 +6,7 @@
     <div class='panel' >
       <div>
       {% for post in site.related_posts limit:4 %}
-        <a href="{{ post.url }}" class='extra blogLink'>
+        <a href="{{ post.url | prepend: site.baseurl }}" class='extra blogLink'>
             <span class="date">{{ post.date | date_to_string }}</span>
             <div>
               <h2>{{ post.title }}</h2>
