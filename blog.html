@@ -20,7 +20,7 @@ layout: default
       <div>
       {% for post in site.posts limit:6 %}
  
-        <a href="{{ post.url }}" class='blogLink'>
+        <a href="/food{{ post.url }}" class='blogLink'>
           <span class="date">{{ post.date | date_to_string }}</span>
           <div>
             <h2>{{ post.title }}</h2>
@@ -44,7 +44,7 @@ layout: default
     <div class='panel' >
       <div>
       {% for post in site.posts offset:6 %}
-        <a href="{{ post.url }}" class='extra blogLink'>
+        <a href="/food{{ post.url }}" class='extra blogLink'>
             <span class="date">{{ post.date | date_to_string }}</span>
             <div>
               <h2>{{ post.title }}</h2>
@@ -61,7 +61,7 @@ layout: default
 
 </main>
 
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
   {% else %}
@@ -76,4 +76,4 @@ layout: default
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div> -->
