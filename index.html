@@ -87,7 +87,7 @@ title: Home
       <div class="panel">
         <div>
           {% for post in site.posts limit:6 %}
-            <a href="{{ post.url }}" class='blogLink'>
+            <a href="{{ post.url | prepend: site.baseurl }}" class='blogLink'>
               <span class="date">{{ post.date | date_to_string }}</span>
               <div>
                 <h2>{{ post.title }}</h2>
