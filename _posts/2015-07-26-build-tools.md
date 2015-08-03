@@ -15,7 +15,7 @@ A Build tool is some piece of software that allows you to do something to your c
  - Minification ~ takes out all of the white spaces to make the file as small and compact as possible. This is supposed to help greatly with the speed the code can run. 
  - Autoprefixer ~ This adds code to your existing code that will help your code run the same way in the different browsers. It adds the browser prefixes where needed without you haveing to do anything more than just run that build tool. 
  - SASS ~ Turns a sass file into a css file. 
- - watch ~ This process looks at a file and runs certain code everytime something is changed. 
+ - Watch ~ This process looks at a file and runs certain code everytime something is changed. 
  - 
 
 GRUNT - older build tool that uses large JSON files to configure your build process. These files tend to be very lengthy because each item has it's own line. This way of doing things usualy promotes the structure and ease of understanding. This program runs in a synchronous fashion by default. The way grunt works is 

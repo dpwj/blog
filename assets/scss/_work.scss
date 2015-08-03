@@ -11,11 +11,15 @@
 		position: relative;
 		background-image: -webkit-radial-gradient(50% 100%, #66707A 0%, #384452 100%);
 		border-bottom: 1px solid #384452;
-		
+		h3 {
+			padding: 10px;
+		}
+
 		img {
 			@extend .transition;
 			transform: translateY(100px);
 		}
+
 		a:hover {
 			h3 {
 				@extend .transition;

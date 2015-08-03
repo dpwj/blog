@@ -2,16 +2,11 @@
 variables
 *****************************************/
 .transition, a:active, a:hover, a.next:active, a.next:hover, .row:hover, .work .example img, .work .example a:hover h3, .work .example a:hover img, a.blogLink {
-  -webkit-transition: all .25s 0s ease;
-          transition: all .25s 0s ease;
-  -webkit-transition-property: all;
-          transition-property: all;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s; }
+  transition: all 0.25s 0s ease;
+  transition-property: all;
+  transition-duration: .25s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
 
 /****************************************
 RESET
@@ -75,6 +70,9 @@ a.next {
     color: #EF4135;
     background-color: #384452; }
 
+figure img {
+  width: 330px; }
+
 .readMore {
   display: inline;
   border-top: 2px solid #ddd;
@@ -99,7 +97,7 @@ a.next {
     font-weight: 900;
     color: #384452;
     padding: 80px 0;
-    margin: 0 100px; }
+    margin: 0; }
     .pageTitle h1 small {
       font-size: 14pt;
       position: absolute;
@@ -156,7 +154,6 @@ footer {
   right: 0; }
 
 .hero {
-  background: -webkit-radial-gradient(rgba(44, 81, 102, 0.8), rgba(44, 81, 102, 0.4)), url("../images/background.jpg");
   background: radial-gradient(rgba(44, 81, 102, 0.8), rgba(44, 81, 102, 0.4)), url("../images/background.jpg");
   background-size: cover;
   height: 600px;
@@ -283,18 +280,14 @@ h2.headline {
     position: relative;
     background-image: -webkit-radial-gradient(50% 100%, #66707A 0%, #384452 100%);
     border-bottom: 1px solid #384452; }
+    .work .example h3 {
+      padding: 10px; }
     .work .example img {
-      -webkit-transform: translateY(100px);
-          -ms-transform: translateY(100px);
-              transform: translateY(100px); }
+      transform: translateY(100px); }
     .work .example a:hover h3 {
-      -webkit-transform: translateY(100px);
-          -ms-transform: translateY(100px);
-              transform: translateY(100px); }
+      transform: translateY(100px); }
     .work .example a:hover img {
-      -webkit-transform: translateY(-75px);
-          -ms-transform: translateY(-75px);
-              transform: translateY(-75px); }
+      transform: translateY(-75px); }
   .work .btn {
     margin: 30px; }
   .work .readMore {
@@ -323,9 +316,7 @@ h2.headline {
     .blogs a:hover h2 {
       color: #fff; }
     .blogs a:hover .readMore {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px);
+      transform: translateY(-50px);
       border-top: 1px solid #EF4135; }
 
 a.blogLink {
@@ -383,4 +374,9 @@ old Articles
 
 .blogContent {
   padding: 100px 200px;
-  line-height: 32px; }
+  line-height: 32px;
+  text-align: justify; }
+  .blogContent p {
+    margin: 20px 0; }
+  .blogContent li {
+    margin: 10px 0; }
