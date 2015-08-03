@@ -5,7 +5,7 @@ title:  BUILD TOOLS
 categories: CSS
 ---
 
-GULP OR GRUNT? Who? What are those? Let's take a little deeper look into what a build tool is and explore the world or MAGIC code helpers.
+GULP OR GRUNT? Who? What are those? Let's take a little deeper look into what a build tool is and explore the world of MAGIC code helpers.
 
 <!--more-->
 A Build tool is some piece of software that allows you to do something to your code after you are done writting it. There are lots of different functions a build tool can help with. Both Grunt and Gulp have large libraries that can help you accomplish many different tasks. 
