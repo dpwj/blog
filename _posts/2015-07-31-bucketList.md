@@ -1,7 +1,7 @@
 ---
 layout: work
 date: 2015-07-31
-title:  Arizona State Credit Union
+title:  Bucket List 
 categories: work
 img: assets/images/AZSTCU-BucketList-LandingPage-6.25.png
 tag: work
