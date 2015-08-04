@@ -4,25 +4,28 @@ footer {
 	text-align: center;	
 	clear:both;
 	position: relative;
+	overflow: hidden;
 }
 
-.socialMedia {
-	display: inline;
-	float: right;
-	padding-right: 40px;
 
-	.fa{
-		font-size: 38pt;
-		padding-right: 20px;
-		
+	.socialMedia {
+		display: inline-block;
+		margin-left: 80px;
+
+
+		.fa{
+			font-size: 38pt;
+			padding-right: 20px;
+			
+		}
+		a:hover {
+			text-decoration: none; 
+		}
 	}
-	a:hover {
-		text-decoration: none; 
-	}
-}
+
 
 .info {
-	display: inline;
+	display: inline-block;
 	font-size: 12pt;
 }
 
