@@ -1,6 +1,6 @@
 ---
 layout: work
-date: 2015-07-01
+date: 2015-07-28
 title: Highroller
 categories: work
 img: assets/images/highroller/home.png

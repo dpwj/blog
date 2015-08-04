@@ -1,6 +1,6 @@
 ---
 layout: work
-date: 2015-07-04
+date: 2015-07-30
 title:  Puppy Love
 categories: work
 img: assets/images/puppylove.png

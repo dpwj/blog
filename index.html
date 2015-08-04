@@ -18,7 +18,7 @@ title: Home
       SEE MY WORK
     </a>
     <div>
-      {% for post in site.tags.work limit:8 %}
+      {% for post in site.tags.work limit:4 %}
       <div class="example"> 
         <a href="{{ post.url | prepend: site.baseurl }}">
           <figure>
