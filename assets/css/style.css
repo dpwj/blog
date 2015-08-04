@@ -368,7 +368,7 @@ old Articles
     bottom: 0;
     position: static; }
 
-.contentSection {
+.blogContentSection {
   background-color: #f4f4f5;
   color: #272f38; }
 
@@ -380,3 +380,7 @@ old Articles
     margin: 20px 0; }
   .blogContent li {
     margin: 10px 0; }
+
+.blogContent img {
+  margin-left: -85px;
+  width: 960px; }

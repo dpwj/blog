@@ -1,0 +1,20 @@
+<section class="work" id="work">
+  <div>
+    {% for post in site.tags.work limit:8 %}
+      <div class="example"> 
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <figure>
+            <h3>{{ post.title }}</h3>
+            <img class="preview" src="{{ post.img | prepend: site.baseurl }}" alt="example">
+          </figure>
+          <div class="readMore">
+            SEE DETAILS
+            <i class="fa fa-chevron-circle-right"></i>
+          </div>
+        </a>
+      </div>
+    {% endfor %}        
+  </div>
+</section>
+
+ 

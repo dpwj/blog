@@ -3,6 +3,7 @@ layout: blog
 date: 2015-07-26
 title:  BUILD TOOLS
 categories: CSS
+tag: code
 ---
 
 GULP OR GRUNT? Who? What are those? Let's take a little deeper look into what a build tool is and explore the world of MAGIC code helpers.

@@ -3,6 +3,7 @@ layout: blog
 date: 2015-07-13
 title: Jamacanize Layouts First
 categories: CSS
+tag: code
 ---
 
 for a beginning developer the best way to learn how to layout a website is to Jamaicanize a layout. Jamaicanizing is the process of giving every single element you build a different background color. This creates a brightly colored crazy looking layout. While this may seem counter intuitive and like a lot of extra work, it is not. Once you have completed the layout it is very quick and easy to take the background colors away. 

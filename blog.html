@@ -18,7 +18,7 @@ layout: default
 
     <div class="panel">
       <div>
-      {% for post in site.posts limit:6 %}
+      {% for post in site.tags.code limit:6 %}
  
         <a href="{{ post.url | prepend: site.baseurl }}" class='blogLink'>
           <span class="date">{{ post.date | date_to_string }}</span>
@@ -43,7 +43,7 @@ layout: default
     </a>
     <div class='panel' >
       <div>
-      {% for post in site.posts offset:6 %}
+      {% for post in site.tags.code offset:6 %}
         <a href="{{ post.url | prepend: site.baseurl }}" class='extra blogLink'>
             <span class="date">{{ post.date | date_to_string }}</span>
             <div>
