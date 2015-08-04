@@ -18,11 +18,12 @@ title: Home
       SEE MY WORK
     </a>
     <div>
+      {% for post in site.tags.work limit:8 %}
       <div class="example"> 
-        <a href="/blog/work">
+        <a href="{{ post.url | prepend: site.baseurl }}">
           <figure>
-            <h3>Puppy Love</h3>
-            <img class="preview" src="assets/images/puppylove.png"  alt="example">
+            <h3>{{ post.title }}</h3>
+            <img class="preview" src="{{ post.img }}" alt="example">
           </figure>
           <div class="readMore">
             READ ARTICLE
@@ -30,45 +31,8 @@ title: Home
           </div>
         </a>
       </div>
-
-      <div class="example"> 
-        <a href="/blog/work">
-          <figure>
-            <h3>Arizona State Credit Union</h3>
-            <img class="preview" src="assets/images/AZSTCU-BucketList-LandingPage-6.25.png"  alt="example">
-          </figure>
-          <div class="readMore">
-            READ ARTICLE
-            <i class="fa fa-chevron-circle-right"></i>
-          </div>
-        </a>
-      </div>
-
-      <div class="example"> 
-        <a href="/blog/work">
-          <figure>
-            <h3>Business Template</h3>
-            <img class="preview" src="assets/images/Business Template.png" alt="example">
-          </figure>
-          <div class="readMore">
-            READ ARTICLE
-            <i class="fa fa-chevron-circle-right"></i>
-          </div>
-        </a>
-      </div>
-
-      <div class="example"> 
-        <a href="/blog/work">
-          <figure>
-            <h3>SuperBowl Mock-up</h3>
-            <img class="preview" src="assets/images/Superbowl.png" alt="example">
-          </figure>
-          <div class="readMore">
-            READ ARTICLE
-            <i class="fa fa-chevron-circle-right"></i>
-          </div>
-        </a>
-      </div>
+      {% endfor %}
+    </div>
 
     
     <a href="/blog/work" class='btn'>All Work</a>
@@ -86,7 +50,7 @@ title: Home
 
       <div class="panel">
         <div>
-          {% for post in site.posts limit:6 %}
+          {% for post in site.tags.code limit:6 %}
             <a href="{{ post.url | prepend: site.baseurl }}" class='blogLink'>
               <span class="date">{{ post.date | date_to_string }}</span>
               <div>
