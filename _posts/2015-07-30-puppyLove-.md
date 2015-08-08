@@ -3,11 +3,11 @@ layout: work
 date: 2015-07-30
 title:  Puppy Love
 categories: work
-img: assets/images/puppylove.png
+img: /assets/images/puppylove.png
 tag: work
 ---
 
-<img src="{{ "assets/images/puppylove.png" | prepend: site.baseurl }}" alt="something herer">
+<img src="{{ "/assets/images/puppylove.png" }}" alt="something here">
 
 
 
@@ -25,4 +25,3 @@ This puppy love site was a test of true CSS knowledge.
 - border box
 - relative and absolute postioning. 
 
-and much more. 

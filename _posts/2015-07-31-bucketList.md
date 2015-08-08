@@ -3,11 +3,11 @@ layout: work
 date: 2015-07-31
 title:  Bucket List 
 categories: work
-img: assets/images/AZSTCU-BucketList-LandingPage-6.25.png
+img: /assets/images/AZSTCU-BucketList-LandingPage-6.25.png
 tag: work
 ---
 
-<img src="{{ "assets/images/AZSTCU-BucketList-LandingPage-6.25.png" | prepend: site.baseurl }}" alt="something herer">
+<img src="{{ "/assets/images/AZSTCU-BucketList-LandingPage-6.25.png" }}" alt="something here">
 
 
 

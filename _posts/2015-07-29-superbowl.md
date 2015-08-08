@@ -3,11 +3,11 @@ layout: work
 date: 2015-07-29
 title:  Super Bowl
 categories: work
-img: assets/images/Superbowl.png
+img: /assets/images/Superbowl.png
 tag: work
 ---
 
-<img src="{{ "assets/images/Superbowl.png" | prepend: site.baseurl }}" alt="something herer">
+<img src="{{ "/assets/images/Superbowl.png" }}" alt="something here">
 
 
 

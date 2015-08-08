@@ -3,16 +3,16 @@ layout: work
 date: 2015-07-28
 title: Highroller
 categories: work
-img: assets/images/highroller/home.png
+img: /assets/images/highroller/home.png
 tag: work
 ---
 
-<img src="{{ "assets/images/highroller/home.png" | prepend: site.baseurl }}" alt="something herer">
-<img src="{{ "assets/images/highroller/login.png" | prepend: site.baseurl }}" alt="something herer">
-<img src="{{ "assets/images/highroller/signup.png" | prepend: site.baseurl }}" alt="something herer">
-<img src="{{ "assets/images/highroller/search.png" | prepend: site.baseurl }}" alt="something herer">
-<img src="{{ "assets/images/highroller/allboats.png" | prepend: site.baseurl }}" alt="something herer">
-<img src="{{ "assets/images/highroller/boat.png" | prepend: site.baseurl }}" alt="something herer">
+<img src="{{ "/assets/images/highroller/home.png"  }}" alt="something here">
+<img src="{{ "/assets/images/highroller/login.png"  }}" alt="something here">
+<img src="{{ "/assets/images/highroller/signup.png"  }}" alt="something here">
+<img src="{{ "/assets/images/highroller/search.png"  }}" alt="something here">
+<img src="{{ "/assets/images/highroller/allboats.png"  }}" alt="something here">
+<img src="{{ "/assets/images/highroller/boat.png"  }}" alt="something here">
 
 
 

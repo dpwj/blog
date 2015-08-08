@@ -3,11 +3,11 @@ layout: work
 date: 2015-07-05
 title:  Business Template
 categories: work
-img: assets/images/Business Template.png
+img: /assets/images/Business Template.png
 tag: work
 ---
 
-<img src="{{ "assets/images/Business Template.png" | prepend: site.baseurl }}" alt="something herer">
+<img src="{{ "/assets/images/Business Template.png" }}" alt="something herer">
 
 
 
